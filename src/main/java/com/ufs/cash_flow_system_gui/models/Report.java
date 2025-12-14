@@ -1,24 +1,30 @@
 package com.ufs.cash_flow_system_gui.models;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Report {
-    private Date transactionDate;
+    private LocalDateTime transactionDate;
     private Double transactionAmount;
 
     public Report() {
     }
 
-    public Report(Date transactionDate, Double transactionAmount) {
+    public Report(Double transactionAmount) {
+        this.transactionDate = LocalDateTime.now();
+        this.transactionAmount = transactionAmount;
+    }
+
+    public Report(LocalDateTime transactionDate, Double transactionAmount) {
         this.transactionDate = transactionDate;
         this.transactionAmount = transactionAmount;
     }
 
-    public Date getTransactionDate() {
+    public LocalDateTime getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(Date transactionDate) {
+    public void setTransactionDate(LocalDateTime transactionDate) {
         this.transactionDate = transactionDate;
     }
 
