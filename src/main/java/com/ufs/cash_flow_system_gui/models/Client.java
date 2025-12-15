@@ -1,23 +1,24 @@
 package com.ufs.cash_flow_system_gui.models;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Client {
 
     private String name;
-    private String birthDate;
+    private LocalDate birthDate;
     private Account account;
 
     public Client() {
     }
 
-    public Client(String name, String birthDate) {
+    public Client(String name, LocalDate birthDate) {
         this.name = name;
         this.birthDate = birthDate;
         this.account = new Account(this);
     }
 
-    public Client(String name, String birthDate, Account account) {
+    public Client(String name, LocalDate birthDate, Account account) {
         this.name = name;
         this.birthDate = birthDate;
         this.account = account;
@@ -31,11 +32,11 @@ public class Client {
         this.name = name;
     }
 
-    public String getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(String birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -51,8 +52,7 @@ public class Client {
     public String toString() {
         return "Client{" +
                 "name='" + name + '\'' +
-                ", birthDate='" + birthDate + '\'' +
-                ", account=" + account +
+                ", birthDate='" + birthDate.toString() + '\'' +
                 '}';
     }
 

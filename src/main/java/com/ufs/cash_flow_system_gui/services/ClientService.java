@@ -4,6 +4,8 @@ import com.ufs.cash_flow_system_gui.models.Account;
 import com.ufs.cash_flow_system_gui.models.Client;
 import com.ufs.cash_flow_system_gui.persistence.ClientsPersistence;
 
+import java.time.LocalDate;
+
 public class ClientService {
 
     public ClientService() {
@@ -13,7 +15,7 @@ public class ClientService {
         return ClientsPersistence.getClientByName(clientName);
     }
 
-    public void createClient(String name, String birthDate) {
+    public void createClient(String name, LocalDate birthDate) {
         Client client = new Client(name, birthDate);
         ClientsPersistence.addClient(client);
     }

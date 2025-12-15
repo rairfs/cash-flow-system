@@ -1,11 +1,13 @@
 package com.ufs.cash_flow_system_gui.persistence;
 
 import com.ufs.cash_flow_system_gui.models.Client;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class ClientsPersistence {
 
-    private static List<Client> clients;
+    private static List<Client> clients = new ArrayList<>();
 
     public static List<Client> getClients() {
         return clients;

@@ -60,8 +60,7 @@ public class Account {
     public String toString() {
         return "Account{" +
                 "accountNumber='" + accountNumber + '\'' +
-                ", balance=" + balance +
-                ", client=" + client +
+                ", balance=" + balance + '\'' +
                 '}';
     }
 
