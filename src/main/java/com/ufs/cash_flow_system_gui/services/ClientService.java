@@ -1,6 +1,5 @@
 package com.ufs.cash_flow_system_gui.services;
 
-import com.ufs.cash_flow_system_gui.models.Account;
 import com.ufs.cash_flow_system_gui.models.Client;
 import com.ufs.cash_flow_system_gui.persistence.ClientsPersistence;
 
