@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.ufs.cash_flow_system_gui.controllers.LoginController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufs.cash_flow_system_gui.controllers.LoginController">
+   <children>
+      <VBox layoutX="189.0" layoutY="138.0" prefHeight="121.0" prefWidth="223.0">
+         <children>
+            <Button fx:id="createAccount" mnemonicParsing="false" onAction="#createAccount" prefHeight="60.0" prefWidth="222.0" text="Criar Conta" />
+            <Button fx:id="useAccount" mnemonicParsing="false" onAction="#useAccount" prefHeight="50.0" prefWidth="222.0" text="Acessar Conta">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+         </children></VBox>
+   </children>
 </AnchorPane>
