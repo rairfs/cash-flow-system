@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufs.cash_flow_system_gui.controllers.DepositController">
+    <children>
+        <Label layoutX="105.0" layoutY="112.0" text="Valor do Depósito:" />
+        <TextField fx:id="depositAmountField" layoutX="220.0" layoutY="108.0" prefWidth="200.0" />
+        <Button layoutX="262.0" layoutY="141.0" mnemonicParsing="false" onAction="#doDeposit" prefHeight="51.0" prefWidth="116.0" text="Depositar" />
+        <Button cancelButton="true" layoutX="299.0" layoutY="223.0" mnemonicParsing="false" onAction="#goBack" text="Voltar" />
+        <Label fx:id="userInfo" layoutX="21.0" layoutY="29.0" />
+        <Label fx:id="balance" layoutX="220.0" layoutY="67.0" />
+    </children>
+
+</AnchorPane>

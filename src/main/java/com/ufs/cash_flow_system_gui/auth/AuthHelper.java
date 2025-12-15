@@ -12,4 +12,8 @@ public class AuthHelper {
     public static void setLoggedInClient(Client client) {
         loggedInClient = client;
     }
+
+    public static void logout() {
+        loggedInClient = null;
+    }
 }

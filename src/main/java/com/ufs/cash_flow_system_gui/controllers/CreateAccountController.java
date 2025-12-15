@@ -13,7 +13,9 @@ import java.time.LocalDate;
 public class CreateAccountController {
 
     private final ClientService clientService = new ClientService();
+    @FXML
     public TextField fullName;
+    @FXML
     public DatePicker birthDate;
 
     @FXML

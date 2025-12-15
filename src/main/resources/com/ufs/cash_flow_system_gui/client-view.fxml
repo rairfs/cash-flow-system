@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.ufs.cash_flow_system_gui.controllers.ClientController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufs.cash_flow_system_gui.controllers.ClientController">
+   <children>
+      <Button layoutX="217.0" layoutY="65.0" mnemonicParsing="false" onAction="#doWithdraw" prefHeight="68.0" prefWidth="166.0" text="Sacar" />
+      <Button layoutX="217.0" layoutY="143.0" mnemonicParsing="false" onAction="#doDeposit" prefHeight="68.0" prefWidth="166.0" text="Depositar" />
+      <Button layoutX="217.0" layoutY="221.0" mnemonicParsing="false" onAction="#generateReport" prefHeight="68.0" prefWidth="166.0" text="Extrato" />
+      <Button cancelButton="true" layoutX="279.0" layoutY="319.0" mnemonicParsing="false" onAction="#exit" text="Sair" />
+      <Label fx:id="userInfo" layoutX="21.0" layoutY="29.0" />
+   </children>
 </AnchorPane>

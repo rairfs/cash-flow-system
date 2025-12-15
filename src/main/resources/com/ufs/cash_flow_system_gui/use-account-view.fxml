@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufs.cash_flow_system_gui.controllers.UseAccountController">
+   <children>
+      <Button layoutX="210.0" layoutY="223.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="180.0" text="Login" />
+      <TextField fx:id="fullName" layoutX="147.0" layoutY="157.0" prefHeight="43.0" prefWidth="307.0" promptText="Digite seu nome">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
